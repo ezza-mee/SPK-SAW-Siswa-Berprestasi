@@ -3,9 +3,10 @@ package com.main.components;
 import java.awt.Color;
 
 public class color {
-    public static final Color DARKGREEN = new Color(22, 66, 60);
-    public static final Color GREEN = new Color(106, 156, 137);
-    public static final Color GREENLIGHT = new Color(196, 218, 210);
+    public static final Color DARKGREEN = new Color(119, 136, 115);
+    public static final Color GREEN = new Color(161, 188, 152);
+    public static final Color GREENLIGHT = new Color(210, 220, 182);
+    public static final Color WHITELIGHT = new Color(241, 243, 224);
     public static final Color WHITE = new Color(255, 255, 255);
     public static final Color RED = new Color(216, 64, 64);
     public static final Color DARKRED = new Color(197, 23, 46);

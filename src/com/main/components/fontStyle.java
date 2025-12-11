@@ -10,7 +10,7 @@ import java.util.Map;
 public class fontStyle {
 
     private static final Map<String, Font> FONT_CACHE = new HashMap<>();
-    private static final String FONT_PATH = "/com/main/resources/fonts/";
+    private static final String FONT_PATH = "/com/main/assets/fonts/";
 
     public enum FontStyle {
         REGULAR("Poppins-Regular.ttf"),
