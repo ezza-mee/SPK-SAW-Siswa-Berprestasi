@@ -42,6 +42,30 @@ public class appIcons {
         return loadIcon("/com/main/assets/images/home-white.png", width, height);
     }
 
+    public imageIcon getDataKriteriaIconHover(int width, int height) {
+        return loadIcon("/com/main/assets/images/data-kriteria-green.png", width, height);
+    }
+
+    public imageIcon getDataKriteriaIconDefault(int width, int height) {
+        return loadIcon("/com/main/assets/images/data-kriteria-white.png", width, height);
+    }
+
+    public imageIcon getDataSiswaIconHover(int width, int height) {
+        return loadIcon("/com/main/assets/images/data-siswa-green.png", width, height);
+    }
+
+    public imageIcon getDataSiswaIconDefault(int width, int height) {
+        return loadIcon("/com/main/assets/images/data-siswa-white.png", width, height);
+    }
+
+    public imageIcon getDataNilaiIconHover(int width, int height) {
+        return loadIcon("/com/main/assets/images/data-nilai-green.png", width, height);
+    }
+
+    public imageIcon getDataNilaiIconDefault(int width, int height) {
+        return loadIcon("/com/main/assets/images/data-nilai-white.png", width, height);
+    }
+
     public imageIcon getLogoutIconHover(int width, int height) {
         return loadIcon("/com/main/assets/images/logout-green.png", width, height);
     }

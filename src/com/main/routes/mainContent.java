@@ -1,6 +1,7 @@
 package com.main.routes;
 
 import com.main.components.panelApps.wrapperPanel;
+import com.main.views.dashboard.parentDashboardAdmin;
 
 public class mainContent extends wrapperPanel {
 
@@ -8,6 +9,7 @@ public class mainContent extends wrapperPanel {
     private loginView loginView;
 
     private dashboardAdminView dashboardAdminView;
+    private parentDashboardAdmin parentDashboardAdmin;
 
     public mainContent(mainFrame mainFrame) {
         super();
@@ -35,9 +37,13 @@ public class mainContent extends wrapperPanel {
     public void showDashboard() {
         refreshContent();
         setSize(1366, 768);
-        
+
         dashboardAdminView = new dashboardAdminView(mainFrame);
+        parentDashboardAdmin = new parentDashboardAdmin(dashboardAdminView);
+        dashboardAdminView.showDashboardHome();
         dashboardAdminView.resetLastContent();
+        parentDashboardAdmin.getNavbar().showHomeView();
+        add(dashboardAdminView);
 
         revalidate();
         repaint();

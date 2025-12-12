@@ -12,8 +12,8 @@ public class authLogin {
         }
 
         // Email & password admin yang ditentukan
-        String adminEmail = "admin@gmail.com";
-        String adminPassword = "admin123";
+        String adminEmail = "admin";
+        String adminPassword = "admin";
 
         // Pengecekan kredensial
         if (!email.equals(adminEmail) || !password.equals(adminPassword)) {

@@ -30,18 +30,6 @@ public class homeDashboardView extends contentPanel {
     private textLabel valueStaff;
     private textLabel valueTransaction;
 
-    private appIcons appIcons = new appIcons();
-
-    private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-    private String today = sdf.format(new Date());
-
-    private String selectedPriode = null;
-
-    private datePickerField dateField;
-
-    private tableNoActionButton dataRangking;
-    private scrollTable scrollDataRangking;
-
     public homeDashboardView(dashboardAdminView parentView) {
         super();
         this.parentView = parentView;
@@ -53,7 +41,6 @@ public class homeDashboardView extends contentPanel {
         setLayout();
         setColor();
         setFont();
-        setAction();
 
         panelProduct.add(labelProduct);
         panelProduct.add(valueProduct);
@@ -66,9 +53,6 @@ public class homeDashboardView extends contentPanel {
 
         panelTransaction.add(labelTransaction);
         panelTransaction.add(valueTransaction);
-
-        panelDiagramTransaction.add(dateField);
-        panelDiagramTransaction.add(scrollDataRangking);
 
         add(panelProduct);
         add(panelStaff);
@@ -91,9 +75,10 @@ public class homeDashboardView extends contentPanel {
         labelStaff = new textLabel("Data Staff", 0, 10, 230, 40);
         labelTransaction = new textLabel("Data Transaction", 0, 10, 230, 40);
 
-        dateField = new datePickerField(20, 20, 300, 40, today);
-
-        scrollDataRangking = new scrollTable(dataRangking, 0, 80, 1050, 300);
+        valueProduct = new textLabel("0", 0, 60, 230, 40);
+        valueSupplier = new textLabel("0", 0, 60, 230, 40);
+        valueStaff = new textLabel("0", 0, 60, 230, 40);
+        valueTransaction = new textLabel("0", 0, 60, 230, 40);
 
     }
 
@@ -137,10 +122,4 @@ public class homeDashboardView extends contentPanel {
         valueStaff.setHorizontalAlignment(JLabel.CENTER);
         valueTransaction.setHorizontalAlignment(JLabel.CENTER);
     }
-
-    private void setAction() {
-        
-    }
-
-
 }
